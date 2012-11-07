@@ -28,6 +28,8 @@
         =lo
         <lo
         <=lo
+        <o
+        <=o
         /o
         splito
         logo

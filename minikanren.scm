@@ -43,6 +43,8 @@
         =lo
         <lo
         <=lo
+        <o
+        <=o
         /o
         logo
         expo
