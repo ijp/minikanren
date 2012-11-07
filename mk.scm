@@ -1,3 +1,52 @@
+#!r6rs
+(library (minikanren mk)
+(export lambdag@
+        lambdaf@
+        rhs
+        lhs
+        size-s
+        var
+        var?
+        empty-s
+        walk
+        ext-s
+        unify
+        ext-s-check
+        occurs-check
+        unify-check
+        walk*
+        reify-s
+        reify-name
+        reify
+        run
+        case-inf
+        mzero
+        unit
+        choice
+        map-inf
+        succeed
+        fail
+        ==
+        ==-check
+        fresh
+        conde
+        all
+        alli
+        condi
+        conda
+        condu
+        mplus
+        bind
+        mplusi
+        bindi
+        all-aux
+        cond-aux
+        ife
+        ifi
+        ifa
+        ifu
+        )
+(import (rnrs))
 ;;; Code that accompanies ``The Reasoned Schemer''
 ;;; Daniel P. Friedman, William E. Byrd and Oleg Kiselyov
 ;;; MIT Press, Cambridge, MA, 2005
@@ -299,3 +348,5 @@
            (g2 s)
            ((s) (g1 s))
            ((s f) (g1 s))))))))
+
+)

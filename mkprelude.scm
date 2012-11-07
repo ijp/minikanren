@@ -1,3 +1,45 @@
+#!r6rs
+(library (minikanren mkprelude)
+(export caro
+        cdro
+        conso
+        nullo
+        eqo
+        eq-caro
+        pairo
+        listo
+        membero
+        rembero
+        appendo
+        anyo
+        nevero
+        alwayso
+
+        build-num
+        full-addero
+        poso
+        >1o
+        gen-addero
+        +o
+        -o
+        *o
+        odd-*o
+        bound-*o
+        =lo
+        <lo
+        <=lo
+        /o
+        splito
+        logo
+        exp2
+        repeated-mul
+        expo
+        trace-vars
+        )
+(import (rnrs)
+        (only (rnrs r5rs) quotient)
+        (minikanren mk)
+        (minikanren mkextraforms))
 ;;; Code that accompanies ``The Reasoned Schemer''
 ;;; Daniel P. Friedman, William E. Byrd and Oleg Kiselyov
 ;;; MIT Press, Cambridge, MA, 2005
@@ -10,9 +52,6 @@
 ;;; 3 October 2005 [WEB]
 ;;; Renamed 'any*' to 'anyo'.
 ;;; Renamed 'never' and 'always' to 'nevero' and 'alwayso'.
-
-(load "mk.scm")
-(load "mkextraforms.scm")
 
 (define caro
   (lambda (p a)
@@ -432,3 +471,4 @@
 ;;; q = 3
 ;;; r = _.0
 ;;; (3)
+)

@@ -1,3 +1,12 @@
+#!r6rs
+(library (minikanren mkextraforms)
+(export run*
+        lambda-lifted
+        ll
+        project
+        )
+(import (rnrs)
+        (minikanren mk))
 ;;; Code that accompanies ``The Reasoned Schemer''
 ;;; Daniel P. Friedman, William E. Byrd and Oleg Kiselyov
 ;;; MIT Press, Cambridge, MA, 2005
@@ -38,3 +47,4 @@
      (lambdag@ (s)
        (let ((x (walk* x s)) ...)
          ((all g ...) s))))))
+)
