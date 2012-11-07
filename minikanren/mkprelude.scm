@@ -456,9 +456,13 @@
     ((_ title x ...)
      (lambdag@ (s)
        (begin
-         (printf "~a~n" title)
+         (display title)
+         (newline)
          (for-each (lambda (x_ t) 
-                     (printf "~a = ~s~n" x_ t))
+                     (display x_)
+                     (display " = ")
+                     (write t)
+                     (newline))
            `(x ...) (reify (walk* `(,x ...) s)))
          (unit s))))))
 
