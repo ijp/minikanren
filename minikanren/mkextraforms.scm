@@ -1,7 +1,7 @@
 #!r6rs
 (library (minikanren mkextraforms)
 (export run*
-        lambda-lifted
+        lambda-limited
         ll
         project
         )
