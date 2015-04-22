@@ -31,7 +31,7 @@ need to them import with
 #+begin_src scheme
 (import (minikanren mk)
         (minikanren mkextraforms)
-        (minikanren prelude))
+        (minikanren mkprelude))
 #+end_src
 
 rather than with
